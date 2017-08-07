@@ -1,0 +1,102 @@
+@import "_imports";
+
+/*	COLOR
+	===== */ 
+
+a {
+	/*link-colors($normal, $hover, $active, $visited, $focus)*/
+	@include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColorVisited, $linkColorHoverFocus);
+	text-decoration: none;
+	border-bottom: 1px solid $linkBorderColor;
+}
+html {
+	background:
+        url(../images/css/asia-topographic.png)
+        center 2em / 75%         /* position / size */
+        no-repeat                /* repeat */
+        #fff;                    /* color */
+    color: $fontColor;
+}
+body {
+	background-color: $body--backgroundColor;
+}
+.u-lHeader {
+	background-color: $u-lHeader--backgroundColor;
+}
+.u-Masthead {
+    border-bottom: 1px solid $linkColor;
+    border-bottom: 1px solid rgba(92, 140, 175, 0.35);
+    padding-bottom: 3em;
+}
+.u-Masthead__siteName--link {
+    @include link-colors($linkColorHoverFocus, #F7B268, $linkColor, $linkColorHoverFocus, #F7B268);
+}
+.u-lFooter {
+	background-color: $u-lFooter--backgroundColor;
+}
+.u-VCard--site {
+    border-top: 1px solid $linkColor;
+    border-top: 1px solid rgba(92, 140, 175, 0.35);
+    padding-top: 3em;
+}
+.u-NavSite__item {
+	@include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
+}
+.u-NavSite__item--isCurrent,
+.u-NavSite__item--isOpen .u-NavSite__item {
+	@include link-colors($fontColor, $linkColorHoverFocus, $linkColorActive, $fontColor, $linkColorHoverFocus);
+}
+.u-NavSite__item--isOpen .u-NavSite__item.u-NavSite__item--isCurrent {
+	@include link-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
+}
+tbody { 
+	tr:nth-child(odd) {
+		background-color: $orange;
+	}
+	td,
+	th {
+	border: 1px solid #ccc;
+	}
+}
+
+/* additions */
+.u-Search__field {
+    border: 8px solid $fontColor;
+}
+html.is-alert {
+	border-top: none;
+}
+
+@media all and (min-width: $small) {
+    html {
+        background:
+            url(../images/css/asia-topographic.png)
+            90% -1.75em / 30%         /* position / size */
+            no-repeat                /* repeat */
+            #fff;                    /* color */
+        border-top: .5em solid $lightOrange;
+		.is-alert {
+			border-top: none;
+		}
+    }
+	.u-Search {
+		background-color:#fff;
+        border: 1px solid $lightOrange;
+	}
+    .u-Search__field {
+        border: none;
+    }
+    .u-Masthead__siteName--link {
+        @include link-colors(#F7B268, $linkColorHoverFocus, $linkColor, #F7B268, $linkColorHoverFocus);
+    }
+}
+
+@media all and (min-width: $pointAtWhichSearchMovesToRight) {
+    html {
+        border-top: 3em solid $lightOrange;
+    }
+}
+.Module--sidebar a,
+.u-VCard--site a {
+      border-bottom: 1px solid $linkColor;
+  }

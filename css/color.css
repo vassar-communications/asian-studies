@@ -1,0 +1,180 @@
+/*	CONFIG
+	====== */
+/*	TYPOGRAPHY
+	========== */
+/*	LAYOUT
+	====== */
+/* Site breakpoints */
+/* 400px divided by 16px */
+/* 600px divided by 16px */
+/* 800px divided by 16px */
+/* 1000px divided by 16px */
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+/* COLOR
+	====== */
+/* Basic link colors - these colors also affect the Google Search result link colors */
+/* MODULES
+	======== */
+/* Bios */
+/* Breadcrumbs  */
+/* Footer */
+/* Images */
+/*	Google search results  */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/* Nav */
+/* level 3 covers Level 3 and up. */
+/* LATEST Modules basic */
+/* Use these variables to place a bg color on side news announcement items */
+/* News  */
+/*	Search
+	------ */
+/*	Mobile search colors
+	-------------------- */
+/* this color needs to match the hard-coded value of the input border found in modules/search.scss */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* This value is found in the nav module but I don't know what it does - maybe remove it? */
+/* The color of the space between search and menu */
+/* Don't modify these */
+/*	COLOR
+	===== */
+a {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  color: #5c8caf;
+  text-decoration: none;
+  border-bottom: 1px solid #5c8caf; }
+  a:visited {
+    color: #231509; }
+  a:focus {
+    color: #331e0e; }
+  a:hover {
+    color: #331e0e; }
+  a:active {
+    color: #ED6707; }
+
+html {
+  background: url(../images/css/asia-topographic.png) center 2em/75% no-repeat #fff;
+  /* color */
+  color: #231509; }
+
+body {
+  background-color: transparent; }
+
+.u-lHeader {
+  background-color: transparent; }
+
+.u-Masthead {
+  border-bottom: 1px solid #5c8caf;
+  border-bottom: 1px solid rgba(92, 140, 175, 0.35);
+  padding-bottom: 3em; }
+
+.u-Masthead__siteName--link {
+  color: #331e0e; }
+  .u-Masthead__siteName--link:visited {
+    color: #331e0e; }
+  .u-Masthead__siteName--link:focus {
+    color: #F7B268; }
+  .u-Masthead__siteName--link:hover {
+    color: #F7B268; }
+  .u-Masthead__siteName--link:active {
+    color: #5c8caf; }
+
+.u-lFooter {
+  background-color: transparent; }
+
+.u-VCard--site {
+  border-top: 1px solid #5c8caf;
+  border-top: 1px solid rgba(92, 140, 175, 0.35);
+  padding-top: 3em; }
+
+.u-NavSite__item {
+  color: #5c8caf; }
+  .u-NavSite__item:visited {
+    color: #5c8caf; }
+  .u-NavSite__item:focus {
+    color: #331e0e; }
+  .u-NavSite__item:hover {
+    color: #331e0e; }
+  .u-NavSite__item:active {
+    color: #ED6707; }
+
+.u-NavSite__item--isCurrent,
+.u-NavSite__item--isOpen .u-NavSite__item {
+  color: #231509; }
+  .u-NavSite__item--isCurrent:visited,
+  .u-NavSite__item--isOpen .u-NavSite__item:visited {
+    color: #231509; }
+  .u-NavSite__item--isCurrent:focus,
+  .u-NavSite__item--isOpen .u-NavSite__item:focus {
+    color: #331e0e; }
+  .u-NavSite__item--isCurrent:hover,
+  .u-NavSite__item--isOpen .u-NavSite__item:hover {
+    color: #331e0e; }
+  .u-NavSite__item--isCurrent:active,
+  .u-NavSite__item--isOpen .u-NavSite__item:active {
+    color: #ED6707; }
+
+.u-NavSite__item--isOpen .u-NavSite__item.u-NavSite__item--isCurrent {
+  color: #5c8caf; }
+  .u-NavSite__item--isOpen .u-NavSite__item.u-NavSite__item--isCurrent:visited {
+    color: #5c8caf; }
+  .u-NavSite__item--isOpen .u-NavSite__item.u-NavSite__item--isCurrent:focus {
+    color: #331e0e; }
+  .u-NavSite__item--isOpen .u-NavSite__item.u-NavSite__item--isCurrent:hover {
+    color: #331e0e; }
+  .u-NavSite__item--isOpen .u-NavSite__item.u-NavSite__item--isCurrent:active {
+    color: #ED6707; }
+
+tbody tr:nth-child(odd) {
+  background-color: #fac18a; }
+tbody td,
+tbody th {
+  border: 1px solid #ccc; }
+
+/* additions */
+.u-Search__field {
+  border: 8px solid #231509; }
+
+html.is-alert {
+  border-top: none; }
+
+@media all and (min-width: 37.5em) {
+  html {
+    background: url(../images/css/asia-topographic.png) 90% -1.75em/30% no-repeat #fff;
+    /* color */
+    border-top: 0.5em solid #f9c287; }
+    html .is-alert {
+      border-top: none; }
+
+  .u-Search {
+    background-color: #fff;
+    border: 1px solid #f9c287; }
+
+  .u-Search__field {
+    border: none; }
+
+  .u-Masthead__siteName--link {
+    color: #F7B268; }
+    .u-Masthead__siteName--link:visited {
+      color: #F7B268; }
+    .u-Masthead__siteName--link:focus {
+      color: #331e0e; }
+    .u-Masthead__siteName--link:hover {
+      color: #331e0e; }
+    .u-Masthead__siteName--link:active {
+      color: #5c8caf; } }
+@media all and (min-width: 1040px) {
+  html {
+    border-top: 3em solid #f9c287; } }
+.Module--sidebar a,
+.u-VCard--site a {
+  border-bottom: 1px solid #5c8caf; }
