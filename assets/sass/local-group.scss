@@ -1,6 +1,13 @@
 @import "typography";
 @import "layout";
 @import "color";
+
+.gf- .PageContent
+{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 @media (min-width: 37.5em)
 {
     html.g-
@@ -26,6 +33,11 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+
+    .gf- body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (min-width: 62.5em)
@@ -40,6 +52,15 @@
         margin: 0 auto;
     }
 }
+
+@media (min-width: 76em)
+{
+    .gf- .PageContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 @media (min-width: 37.5em) {
 .g- .u-Masthead__siteName {
     margin-top: 0;

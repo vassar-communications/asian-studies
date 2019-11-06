@@ -17,6 +17,22 @@ html {
         #fff;                    /* color */
     color: $fontColor;
 }
+
+html.gf-,
+html.gf- body
+{
+    background: none;
+}
+
+.gf- .PageContent
+{
+	background:
+        url(../images/css/asia-topographic.png)
+        100% -1.75em / 36%         /* position / size */
+        no-repeat                /* repeat */
+        #fff;                    /* color */
+}
+
 body {
 	background-color: $body--backgroundColor;
 }

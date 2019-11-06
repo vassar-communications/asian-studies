@@ -88,10 +88,6 @@
 	----- */
 
 @media all and (min-width: $large) {
-	body {
-		max-width: 75em;
-		margin: 0 auto;
-	}
 	.u-lAside {
 		padding: 0;
 		padding-left: 1%;
@@ -110,6 +106,12 @@
 	.u-biosInner .u-NavSite {
 		width: 25%;
 	}
+    
+    .gf- body
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }    
 }
 
 @media all and (min-width: $pointAtWhichSearchMovesToRight) {
